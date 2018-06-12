@@ -71,7 +71,7 @@ textarea {
 }
 
 /* Estilos contenedor comentarios */
-#cont {
+#post {
 	border-radius: 0.4em;
 	margin: 0 auto;
 	color: #4E4D53;
@@ -80,11 +80,11 @@ textarea {
 	padding: 0 16%;
 }
 
-#cont span {
+#post span {
 	margin-left: 1em;
 }
 
-#cont div {
+#post div {
 	padding: 1em 0.5em;
 	margin-bottom: 2em;
 	outline: 0.1em solid #E5E3F2;
