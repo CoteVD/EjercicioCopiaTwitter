@@ -24,11 +24,9 @@ btn.addEventListener('click', () => {
 
 //Deshabilitar el boton si no hay carácteres escritos.
 const disableBtn = () => {
-
-  let commentsBtn = document.getElementById('message').value;
+  let commentsBtn = document.getElementById('message').value;  
   
 	if(commentsBtn.length > 0){
-
     document.getElementById('btn').removeAttribute('disabled');  
 	}
 };
