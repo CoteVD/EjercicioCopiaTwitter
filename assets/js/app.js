@@ -25,13 +25,13 @@ btn.addEventListener('click', () => {
   newComments.appendChild(contenedorElemento);
 
   post.appendChild(newComments);
-})
+});
 
 //Contar los carácteres que faltan.
 let count = () => { 
-  var max = '150'; 
-  var str = document.getElementById('message').value; 
-  var lngh = str.length; 
+  let max = '150'; 
+  let str = document.getElementById('message').value; 
+  let lngh = str.length; 
 
       if(lngh <= max) { 
            document.getElementById('contador').value = max - lngh; 
