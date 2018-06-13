@@ -4,7 +4,6 @@ body {
 	background-color: #FAFAFA;
 }
 
-
 /* Estilos generales */
 
 .center {
@@ -22,11 +21,6 @@ header div img {
 }
 
 /* Estilos imágen y su contenedor */
-
-.photo{
-	text-align: center;
-}
-
 img{
 	width: 100%;
 }
@@ -47,6 +41,9 @@ textarea {
 	border-radius: 1em;
 	border: none;
 	margin: 0 auto;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	border-radius: 4px;
+	outline: 0.1em solid #E5E3F2;
 }
 
 /* Estilos botón agregar */
@@ -78,6 +75,7 @@ textarea {
 	text-align: left;
 	margin-bottom: 6em;
 	padding: 0 16%;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #post span {
@@ -89,27 +87,6 @@ textarea {
 	margin-bottom: 2em;
 	outline: 0.1em solid #E5E3F2;
 	background-color: #FFF;
-}
-
-.heart, .trash {
-	margin:1em;
-	float: right;
-	cursor: pointer;
-}
-
-.trash:hover {
-	color: #1DA1F2;
-	cursor: pointer;
-}
-
-.strike-out {
-	text-decoration: line-through;
-	color: #1DA1F2;
-}
-
-.red {
-	color: #FC1E26;
-	cursor: pointer;
 }
 
 p {
