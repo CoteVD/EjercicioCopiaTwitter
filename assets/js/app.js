@@ -1,3 +1,4 @@
+  //Rescato el valor del boton y le doy funcionalidad.
 const btn = document.getElementById('btn');
 btn.addEventListener('click', () => {
   //Rescato el mensaje con el botón.
@@ -8,12 +9,6 @@ btn.addEventListener('click', () => {
 
   //Crear un div contenedor.
   const newComments = document.createElement('div');
-
-  //Validar que el textarea tenga un comentario.
-  /*if(comment.length === 0 || comment === null) {
-    ;
-    return false;
-  }*/
 
   //Defino parentesco.
   let textNewComment = document.createTextNode(comment);
@@ -27,9 +22,20 @@ btn.addEventListener('click', () => {
   post.appendChild(newComments);
 });
 
+//Deshabilitar el boton si no hay carácteres escritos.
+const disableBtn = () => {
+
+  let commentsBtn = document.getElementById('message').value;
+  
+	if(commentsBtn.length > 0){
+
+    document.getElementById('btn').removeAttribute('disabled');  
+	}
+};
+
 //Contar los carácteres que faltan.
 let count = () => { 
-  let max = '150'; 
+  let max = '149'; 
   let str = document.getElementById('message').value; 
   let lngh = str.length; 
 
